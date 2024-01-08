@@ -1,3 +1,56 @@
-h1{
-    color : blue;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.logo {
+  width: 100px;
+}
+.list-container {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+}
+
+.list {
+  padding: 10px;
+  margin-right: 50px;
+  margin: 10px;
+}
+
+.res-card {
+  /* display : grid;
+  padding : 30px;
+  max-width: max-content;
+  border: 1px solid hsl(0, 0%, 0%);
+  background-color: #f0f0f0; */
+
+  /* height : 300px; */
+  width : 200px;
+  border: 1px solid hsl(0, 0%, 0%);
+  padding : 10px;
+  margin : 5px;
+}
+.res-logo {
+   height: 200px;
+   width: 200px;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-container {
+  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.res-card > h3 {
+    text-align: center;
+}
+
+.res-details{
+    padding: 1px;
 }
