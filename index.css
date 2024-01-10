@@ -3,9 +3,11 @@
   justify-content: space-between;
   border: 1px solid black;
 }
+
 .logo {
   width: 100px;
 }
+
 .list-container {
   display: flex;
   list-style: none;
@@ -29,11 +31,12 @@
   width : 200px;
   border: 1px solid hsl(0, 0%, 0%);
   padding : 10px;
-  margin : 5px;
 }
+
 .res-logo {
    height: 200px;
    width: 200px;
+   object-fit: cover;
 }
 
 .search {
@@ -41,9 +44,9 @@
 }
 
 .res-container {
-  /* display: flex; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   
 }
 
@@ -51,6 +54,7 @@
     text-align: center;
 }
 
-.res-details{
-    padding: 1px;
+.res-details {
+    text-align: center;
+    justify-content: center;
 }
