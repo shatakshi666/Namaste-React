@@ -6,9 +6,7 @@
   overflow: visible;
 } */
 
-.filter{
-  margin : 10px;
-}
+
 .header {
     overflow: hidden;
     /* background-color: #333; */
@@ -96,7 +94,8 @@
   border: 1px solid hsl(0, 0%, 0%);
   padding : 10px; */
 
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   height: 500px;
   width: 200px;
   justify-items: baseline;
@@ -188,4 +187,24 @@
   align-items :end;
   justify-content: last baseline;
   
+}
+
+.login-btn{
+  cursor: pointer;
+}
+.filter-btn{
+  cursor  :pointer;
+  margin : 10px;
+ 
+}
+
+.menu {
+height : 100px;
+width : 100 px;
+object-fit: cover;
+}
+
+.user-card {
+  padding : 10px;
+  border : 1px solid black;
 }

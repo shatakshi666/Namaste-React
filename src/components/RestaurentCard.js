@@ -19,10 +19,7 @@ const RestaurentCard = (props) => {
         }
         alt = "images of restaurents"
       />
-      {console.log(
-           CDN_URL  +
-          cloudinaryImageId
-        )}
+      
       <div className="res-details">
         <h4>{name}&nbsp;</h4>
 
