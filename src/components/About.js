@@ -2,6 +2,7 @@ import User from "./User";
 import UserClass from "./UserClass";
 import React from "react";
 
+
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -26,9 +27,13 @@ class About extends React.Component {
     console.log("Parent component did mount");
     
   }
+
+  
   render() {
     console.log("Parent render called");
     const {login,location,avatar_url} = this.state.userInfo;
+
+  
     return (
       <div>
         <h1>This is a about us page.</h1>
