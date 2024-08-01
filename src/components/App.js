@@ -4,20 +4,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./Header";
-// import Body from "./Body";
 import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
-// import RestaurantMenu from "./RestaurentMenu";
 import { lazy, Suspense } from 'react';
 
 const Body = lazy(() => import('./Body'));
 const RestaurantMenu = lazy(() => import('./RestaurentMenu'));
-
 const AppLayout = () => {
   return (
     <div className="app">
-
       <Header />
       <Outlet />
     </div>

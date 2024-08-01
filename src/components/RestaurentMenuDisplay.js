@@ -3,25 +3,32 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 const RestaurentMenuDisplay = (props) => {
 
     const { resMenudata } = props;
-    const { name, description, imageId } = resMenudata;
+    const { name, description, imageId} = resMenudata;
 
     const status = useOnlineStatus();
 
     if (status === false) return <h1>Seems like you are offline!!</h1>
     return ( <>
-        <div className="block  p-4 m-4 items-center  relative">
-            <img className=" bg-green-300 p-2 m-2 w-36 h-auto object-cover justify-center border  rounded-lg" src={CDN_URL + imageId} >
-            </img>
-            <button className="my-24 pr-3 pl-3 bg-white absolute   m-10 mx-12 mb-14 border rounded-md border-black  justify-items-center p-1 top-5">Add</button>
+    <div className ="">
+        <div className="justify-between flex">
+        <div className="w-8/12 p-4">
+        
+            <center><h2 className="text-left font-semibold m-2 p-2">{name}</h2></center>
 
-            <center><h2 className="font-bold  ">{name}</h2></center>
-
-            <h3 className="p-2 m-2">{description}</h3>
-
-
+            <p className="m-2 p-2">{description}</p> 
+        
+        {/* </center> */}
+        </div>
+        <div className="w-4/12 p-4 flex ">
+        <img className="w-full h-40 object-cover rounded-md " src={CDN_URL + imageId} >
+        </img>
+        <button className="bg-black text-white p-2 m-2 absolute mx-12 rounded-md my-40">Add +</button>
+        </div>
+       
+        </div>
 
         </div>
-        {/* </center> */}
+        <hr className="border-bottom-1 bg-slate-100 m-2 p-2"/>
         </>
     )
 }
