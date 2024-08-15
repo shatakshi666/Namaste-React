@@ -3,6 +3,7 @@ import RestaurentMenuDisplay from "./RestaurentMenuDisplay";
 const RestaurentCategory = ({data, restaurentCardData, showItems, setShowIndex}) => {
 const [collapse , setCollapse] = useState(false);
 const handleClick = () => {
+    console.log("Clicked");
        setShowIndex();
        setCollapse(!collapse);      
     }
